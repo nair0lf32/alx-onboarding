@@ -1,0 +1,10 @@
+INT sum  // declare a variable of type INT
+
+READ num 
+
+IF num > 0 THEN
+    sum = sum + num
+    READ num
+ELSE
+    WRITE sum
+ENDIF

@@ -1,0 +1,39 @@
+LIST sorted_nums  //declare list variable
+
+READ INT n1,n2,n3
+
+IF n1 < n2                           //compare n1 and n2
+    ADD n1 to sorted_nums
+    IF n2 < n3                       //compare n2 and n3
+        ADD n3 to sorted_nums
+        WRITE sorted_nums
+    ELSE                 
+        ADD n3 to sorted_nums
+        ADD n2 to sorted_nums
+        WRITE sorted_nums
+    ENDIF
+
+ELSE IF n2 < n1                        
+    ADD n2 to sorted_nums
+    IF n3 < n1                      
+        ADD n1 to sorted_nums
+        WRITE sorted_nums
+    ELSE 
+        ADD n1 to sorted_nums
+        ADD n3 to sorted_nums
+        WRITE sorted_nums
+    ENDIF
+END ELSEIF
+
+ELSE                                 //compare n3 and n1
+    ADD n3 to sorted_nums           
+    IF n1 < n2
+        ADD n1 to sorted_nums
+        ADD n2 to sorted_nums
+        WRITE sorted_nums
+    ELSE 
+        ADD n2 to sorted_nums
+        ADD n1 to sorted_nums
+        WRITE sorted_nums
+    ENDIF
+ENDIF

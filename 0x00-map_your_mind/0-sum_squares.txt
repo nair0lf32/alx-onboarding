@@ -1,0 +1,11 @@
+LIST nums      //declare variables
+INT sum
+
+READ numbers
+ADD numbers to nums
+
+FOR n in nums:
+    sum = sum + (n * n)
+END FOR
+
+WRITE sum
